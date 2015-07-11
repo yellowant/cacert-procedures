@@ -1,0 +1,3 @@
+[submodule "rootG2Generation/scripts"]
+	path = rootG2Generation/scripts
+	url = https://github.com/yellowant/cacert-nre
