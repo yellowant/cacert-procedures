@@ -52,7 +52,7 @@ int main(int argc, char *argv[]){
     }
     BIGNUM *bn = BN_new();
     
-    if(BN_hex2bn(&bn, "10000000000000000") == 0) {
+    if(BN_hex2bn(&bn, "0f") == 0) {
         printf("Error while setting Bignum\n");
         return -1;
     }
