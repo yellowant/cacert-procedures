@@ -58,6 +58,8 @@ int main(int argc, char *argv[]){
     }
     BN_to_ASN1_INTEGER( bn , cert->cert_info->serialNumber );
     BN_free(bn);
+    ASN1_TIME *tm = X509_get_notBefore( cert );
+    ASN1_TIME_set_string(tm, "20030330122950Z");
 
     X509_sign(cert, pkey, EVP_sha256());
 
